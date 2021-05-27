@@ -54,6 +54,11 @@ option{
     width: 10ch;
 
 }
+div:last-child{
+        background-color: rgb(255, 255, 255);
+        width: 52ch;
+    
+}
 @media only screen and (max-width:375px){
     .container{
         width:110ch;
