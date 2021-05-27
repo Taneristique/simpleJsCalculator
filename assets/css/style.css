@@ -1,0 +1,82 @@
+*,*::before,*::after{
+    box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+}
+body,body::after,body:focus{
+
+    color: green;
+    background-color: black;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    font-size: 1.2em;
+    background:fixed  linear-gradient(to bottom,rgb(0, 255, 115),rgb(138, 216, 64));
+}
+
+
+
+
+.container{
+    margin-top: 25vh;
+
+    background-color: rgb(255, 255, 255);
+    color: black;
+    border-radius: 5px;
+
+    width: 52ch;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    
+}
+.container .math{
+    display: inline-flex;
+    flex-direction: column;
+
+    align-items: center;
+
+}
+
+.math>input{
+    width: 50ch;
+    border: 1px solid black;
+}
+
+.container *{    padding: 10px;
+    margin-top: 10px;
+}
+
+
+
+body :last-child{
+    background-color: rgb(255, 255, 255);
+    width: 52ch;
+}
+option{
+    background-color: rgb(255, 255, 255);
+
+}
+#op{
+    border: 1px solid black;
+    width: 10ch;
+
+}
+@media only screen and (max-width:375px){
+    .container{
+        width:110ch;
+        margin-left: 10px;
+    }
+    .container h1{
+        margin-left: 326px;
+    }
+   .container .math{
+    padding-left: 326px;
+   }
+   body :last-child{
+    background-color: rgb(255, 255, 255);
+    width: 110ch;
+    padding-left: 326px;
+}
+}
